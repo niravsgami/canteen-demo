@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				 background:url("canteen.png") no-repeat;
+				 background-size: cover;
+			}
+			legend {
+				font-family: Fantasy;
+				font-size: 25px;
+			}
+			input[type=text], input[type=password], input[type=date], input[type=email], input[type=tel] {
+				margin-bottom:10px;
+				margin-top:10px;
+				color:#000;
+				font-weight:700;
+				font-size:12px;
+				width:99%;
+				height:30px;
+				outline:none;
+				border:none;
+				border-bottom:2px solid #f5822B;
+			}
+			input[type=submit], input[type=reset] {
+				margin-left:50px;
+				margin-right:50px;
+				font-weight:700;
+				font-size:12px;
+				width:30%;
+				height:40px;
+				background-color:#f5822B;
+				border-radius:8px;
+				color:#fff;
+				outline: none;
+			}
+			fieldset {
+			    margin:auto;
+			    width:45%;
+			    background-color:#fff;
+			    border-radius:8px;
+			}
+			input[type=radio] {
+			    margin-left:50px;
+			    margin-top:10px;
+			}
+			.required:before {
+			    color: #e32;
+                content: ' *';
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="Registration.js"></script>
+		
+	</head>
+	<body bgcolor="#ddd">
+	<font face="Proxima Nova">
+		<form id="myForm">
+		<fieldset>
+			<legend> Registration Form </legend>
+			<p><label class="required">First Name<br><input type="text" id="fname" placeholder="Rahul"></label></p>
+			<p><label class="required">Last Name<br><input type="text" id="lname" placeholder="Soni"></label></p>
+			<p>Gender<br><label><input type="radio" id="GenderM" name="Gender">Male</label><label><input type="radio" name="Gender" id="GenderF">Female</label></p>
+			<p><label>Date of Birth<br><input type="date" id="Calendar"></label></p>
+			<p><label class="required">E-mail<br><input type="email" id="Email" placeholder="soni.rv@somaiya.edu"></label></p>
+			<p><label>Mobile No.<br><input type="tel" id="Mobile" placeholder="976xxxxxx2"></label></p>
+			<p><label class="required">Password<br><input type="password" id="Password" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=></label></p>
+			<p><label class="required">Confirm Password<br><input type="password" id="cPassword" placeholder="********"></label></p>
+			<p><label><input type="checkbox" id="TC" checked>I agree to <a href="#tc">T&C</a>.</label></p>
+			<p><input type="submit" id="Register"><input type="reset" id="Reset" value="Reset"></p>
+		</fieldset>				
+		</form>
+	</font>
+	</body>
+</html>
